@@ -10,8 +10,7 @@ function App() {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-8 text-center">
-                    <h1 id="title">todos</h1>
-                    <span>{JSON.stringify(store.todoList)}</span>
+                    <h1  className="display-3" id="title">todos</h1>
                 </div>
             </div>
             <div className="row justify-content-center">
@@ -24,7 +23,6 @@ function App() {
                         </li>
                         {
                             store.todoList.map((item, index) => {
-                                // console.log(item.label)
                                 return (
                                     <li 
                                         key={`"li${index}"`}
@@ -50,6 +48,7 @@ function App() {
                         </li>
 
                     </ul>
+                    {<button className="btn shadow btn-danger" onClick={()=>actions.deleteAll()}>Delete All</button>}
                 </div>
             </div>
         </div>

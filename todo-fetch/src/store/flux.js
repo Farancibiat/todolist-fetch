@@ -55,11 +55,14 @@ const getState = ({ getStore, getActions, setStore }) => {
                     setStore({ todoList: [] });
                     getActions().updateApi();
                 }
-                console.log(toErase);
                 const filterData = getStore().todoList.filter((item, index) => index !== toErase);
-                console.log(filterData);
                 setStore({ todoList: filterData });
                 getActions().updateApi();
+            },
+
+            deleteAll: () => {
+                    setStore({ todoList: [] });
+                    getActions().updateApi();
             }
         }
 
