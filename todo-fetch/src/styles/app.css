@@ -1,0 +1,23 @@
+.min-size{
+    font-size: 12px;
+}
+
+.close{
+    color:white !important;
+    font-weight: 600;
+}
+
+.close:hover{
+    color:red !important;
+}
+
+body{
+    background-image: url("../img/background.png");
+}
+
+h1{
+    color:  rgb(197, 165, 192);
+    font-weight: 100 !important;
+
+}
+
